@@ -8,16 +8,6 @@
 
 config_version=4
 
-_global_script_classes=[ {
-"base": "Control",
-"class": "ExpWindowFrame",
-"language": "GDScript",
-"path": "res://experiment/ui-classes-1/App/Windows/ExpWindowFrame.gd"
-} ]
-_global_script_class_icons={
-"ExpWindowFrame": ""
-}
-
 [application]
 
 config/name="Godot Initializers"

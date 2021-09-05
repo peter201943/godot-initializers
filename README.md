@@ -285,7 +285,7 @@ Uses None.
 - Exports
 - Folders
 
-### [ ] Advanced Godot Setup
+### [x] Advanced Godot Setup
 - Copy Files from InStructEd
 
 ### [ ] Method 1 
