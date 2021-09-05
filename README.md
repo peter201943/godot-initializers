@@ -108,6 +108,12 @@ Includes None.
 Part of [Error Recovery](#error-recovery).  
 Uses None.  
 
+### Done
+Item is done/no more work needed.  
+Includes None.  
+Part of [Status](#status).  
+Uses None.  
+
 ### Easy Error Recovery
 Changes that require only some or no work to revert.  
 Includes None.  
@@ -168,6 +174,12 @@ Includes None.
 Part of [Feedback](#feedback).  
 Uses None.  
 
+### Location
+Where something is located in project.  
+Includes None.  
+Part of [Method Design Properties](#method-design-properties).  
+Uses None.  
+
 ### Low Code Complexity
 Something that is relatively easy to make.  
 Includes None.  
@@ -190,7 +202,7 @@ Uses None.
 Used to measure each goal of this project. Explicitly designed for.  
 Includes [Assignment](#assignment), [Code Complexity](#code-complexity), [Error Recovery](#error-recovery), [Feedback](#feedback), [Final Setup](#final-setup), [User Ceremony](#user-ceremony).  
 Part of [Methods](#methods), [Roadmap](#roadmap).  
-Uses [Accept](#accept), [Add](#add), [Briefly](#briefly), [Consequence](#consequence).  
+Uses [Accept](#accept), [Add](#add), [Briefly](#briefly), [Consequence](#consequence), [Location](#location), [Status](#status).  
 
 ### Methods
 Goal of this project is to implement each of these.  
@@ -214,6 +226,12 @@ Uses None.
 No further steps are needed for the structure.  
 Includes None.  
 Part of [Final Setup](#final-setup).  
+Uses None.  
+
+### No Status
+Item is untouched/not started yet.  
+Includes None.  
+Part of [Status](#status).  
 Uses None.  
 
 ### No User Ceremony
@@ -246,6 +264,12 @@ Includes None.
 Part of [Final Setup](#final-setup).  
 Uses None.  
 
+### Status
+Whether a Roadmap step is done or not started or etcetera.  
+Includes [Done](#done), [No Status](#no-status).  
+Part of [Method Design Properties](#method-design-properties).  
+Uses None.  
+
 ### User Ceremony
 Work required on the user's part to make this thing work.  
 Includes [Heavy User Ceremony](#heavy-user-ceremony), [Low User Ceremony](#low-user-ceremony), [No User Ceremony](#no-user-ceremony).  
@@ -273,32 +297,41 @@ Uses None.
 
 ## Roadmap
 
-### [x] Basic GitHub Setup
-- Project
-- Readme
+### Basic GitHub Setup
+- Briefly Project, Readme
+- Status *Done*
 
-### [x] Advanced GitHub Setup
-- Very Detailed Readme
+### Advanced GitHub Setup
+- Briefly Very Detailed Readme
+- Status *Done*
 
-### [x] Basic Godot Setup
-- Project Files
-- Exports
-- Folders
+### Basic Godot Setup
+- Briefly Project Files, Exports, Folders
+- Status *Done*
 
-### [x] Advanced Godot Setup
-- Copy Files from InStructEd
+### Advanced Godot Setup
+- Briefly Copy Files from InStructEd
+- Status *Done*
 
-### [ ] Method 1 
+### Method 0
+- Briefly full backup copy of InStructEd not meant to be modified
+- Location [`method-0/`](method-0/)
+- Status *Done*
+
+### Method 1
 - Briefly build up scenes manually using *Instance Child Scene*, *Expand Child Nodes*, *...*
+- Location [`method-1/`](method-1/)
 - Accept Scene-Expansion-Assignment
 - Consequence No-Final-Setup
 - Consequence Difficult-Error-Recovery
 - Consequence Inherent-Feedback
 - Consequence Heavy-User-Ceremony
 - Consequence No-Code-Complexity
+- Status *Done*
 
-### [ ] Method 2 
+### Method 2 
 - Briefly describe structure in terms of scene-tree nodes and construct the intended structure *after* scene is running
+- Location [`method-2/`](method-2/)
 - Accept Node-Tree-Assignment
 - Add Init-Final-Setup
 - Consequence Script-Final-Setup
@@ -307,8 +340,9 @@ Uses None.
 - Consequence Low-User-Ceremony
 - Consequence Low-Code-Complexity
 
-### [ ] Method 3
+### Method 3
 - Briefly describe structure in terms of inspector exported variable assignments
+- Location [`method-3/`](method-3/)
 - Add Exported-Variable-Assignment
 - Add Init-Final-Setup
 - Consequence Script-Final-Setup
@@ -317,8 +351,9 @@ Uses None.
 - Consequence No-User-Ceremony
 - Consequence Medium-Code-Complexity
 
-### [ ] Method 4
+### Method 4
 - Briefly describe structure in terms of scene-tree nodes and immediately act upon any changes, permanently, do not use any hidden nodes to render anything
+- Location [`method-4/`](method-4/)
 - Accept Node-Tree-Assignment 
 - Add Tool-Mode-Preview-And-Setup
 - Consequence No-Final-Setup
@@ -327,8 +362,9 @@ Uses None.
 - Consequence Heavy-User-Ceremony
 - Consequence High-Code-Complexity
 
-### [ ] Method 5
+### Method 5
 - Briefly describe structure in terms of scene-tree nodes but render consequences of arrangement in editor using hidden ui nodes
+- Location [`method-5/`](method-5/)
 - Accept Node-Tree-Assignment 
 - Add Tool-Mode-Preview 
 - Add Init-Final-Setup
