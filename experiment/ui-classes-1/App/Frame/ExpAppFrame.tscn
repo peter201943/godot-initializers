@@ -1,0 +1,208 @@
+[gd_scene load_steps=18 format=2]
+
+[ext_resource path="res://experiment/ui-classes-1/App/Frame/window_options.gd" type="Script" id=1]
+[ext_resource path="res://editor/icon/temp/zoom_in.png" type="Texture" id=2]
+[ext_resource path="res://editor/icon/temp/topic_files.png" type="Texture" id=3]
+[ext_resource path="res://editor/icon/temp/topic_home.png" type="Texture" id=4]
+[ext_resource path="res://editor/icon/temp/topic_controls.png" type="Texture" id=5]
+[ext_resource path="res://editor/icon/temp/topic_help.png" type="Texture" id=6]
+[ext_resource path="res://editor/icon/temp/action_export.png" type="Texture" id=7]
+[ext_resource path="res://editor/icon/temp/zoom_full.png" type="Texture" id=8]
+[ext_resource path="res://editor/icon/temp/zoom_out.png" type="Texture" id=9]
+[ext_resource path="res://editor/icon/temp/settings.png" type="Texture" id=10]
+[ext_resource path="res://editor/icon/temp/pan_up.png" type="Texture" id=11]
+[ext_resource path="res://editor/icon/temp/pan_down.png" type="Texture" id=12]
+[ext_resource path="res://editor/icon/temp/pan_left.png" type="Texture" id=13]
+[ext_resource path="res://editor/icon/temp/pan_right.png" type="Texture" id=14]
+[ext_resource path="res://experiment/ui-classes-1/App/Windows/Help/ExpWindowHelp.tscn" type="PackedScene" id=15]
+[ext_resource path="res://experiment/ui-classes-1/App/Windows/ExpWindowFrame.tscn" type="PackedScene" id=16]
+[ext_resource path="res://experiment/ui-classes-1/App/Windows/Profile/ExpWindowProfile.tscn" type="PackedScene" id=17]
+
+[node name="ExpAppFrame" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 1020, 50 )
+mouse_filter = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+help_window = ExtResource( 15 )
+settings_window = ExtResource( 16 )
+controls_window = ExtResource( 16 )
+profile_window = ExtResource( 17 )
+file_window = ExtResource( 16 )
+
+[node name="top_left" type="HBoxContainer" parent="."]
+margin_right = 140.0
+margin_bottom = 38.0
+rect_scale = Vector2( 1.03728, 0.893937 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="help" type="Button" parent="top_left"]
+margin_right = 44.0
+margin_bottom = 38.0
+hint_tooltip = "Help"
+icon = ExtResource( 6 )
+
+[node name="settings" type="Button" parent="top_left"]
+margin_left = 48.0
+margin_right = 92.0
+margin_bottom = 38.0
+hint_tooltip = "Settings"
+icon = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="controls" type="Button" parent="top_left"]
+margin_left = 96.0
+margin_right = 140.0
+margin_bottom = 38.0
+hint_tooltip = "Controls"
+icon = ExtResource( 5 )
+
+[node name="top_right" type="HBoxContainer" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -140.0
+margin_bottom = 38.0
+rect_scale = Vector2( 1.03728, 0.893937 )
+alignment = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="profile" type="Button" parent="top_right"]
+margin_right = 44.0
+margin_bottom = 38.0
+hint_tooltip = "Profile"
+icon = ExtResource( 4 )
+
+[node name="files" type="Button" parent="top_right"]
+margin_left = 48.0
+margin_right = 92.0
+margin_bottom = 38.0
+hint_tooltip = "Open File"
+icon = ExtResource( 3 )
+
+[node name="export" type="Button" parent="top_right"]
+margin_left = 96.0
+margin_right = 140.0
+margin_bottom = 38.0
+hint_tooltip = "Export to JSON"
+icon = ExtResource( 7 )
+
+[node name="bottom_left" type="HBoxContainer" parent="."]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_top = -40.0
+margin_right = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="bottom_right" type="HBoxContainer" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -140.0
+margin_top = -40.0
+alignment = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="zoom_full" type="Button" parent="bottom_right"]
+margin_right = 44.0
+margin_bottom = 40.0
+hint_tooltip = "Reset Zoom"
+icon = ExtResource( 8 )
+
+[node name="zoom_in" type="Button" parent="bottom_right"]
+margin_left = 48.0
+margin_right = 92.0
+margin_bottom = 40.0
+hint_tooltip = "Zoom In"
+icon = ExtResource( 2 )
+
+[node name="zoom_out" type="Button" parent="bottom_right"]
+margin_left = 96.0
+margin_right = 140.0
+margin_bottom = 40.0
+hint_tooltip = "Zoom Out"
+icon = ExtResource( 9 )
+
+[node name="panning" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+
+[node name="pan_up" type="Button" parent="panning"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -22.0
+margin_right = 22.0
+margin_bottom = 40.0
+hint_tooltip = "Pan Up"
+icon = ExtResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="pan_down" type="Button" parent="panning"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -22.0
+margin_top = -40.0
+margin_right = 22.0
+hint_tooltip = "Pan Down"
+icon = ExtResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="pan_left" type="Button" parent="panning"]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_top = -20.0
+margin_right = 44.0
+margin_bottom = 20.0
+hint_tooltip = "Pan Left"
+icon = ExtResource( 13 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="pan_right" type="Button" parent="panning"]
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = -44.0
+margin_top = -20.0
+margin_bottom = 20.0
+hint_tooltip = "Pan Right"
+icon = ExtResource( 14 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="top_left/help" to="." method="open_help"]
+[connection signal="pressed" from="top_left/settings" to="." method="open_settings"]
+[connection signal="pressed" from="top_left/controls" to="." method="open_controls"]
+[connection signal="pressed" from="top_right/profile" to="." method="open_profile"]
+[connection signal="pressed" from="top_right/files" to="." method="open_files"]
+[connection signal="pressed" from="top_right/export" to="." method="open_export"]
+[connection signal="pressed" from="bottom_right/zoom_full" to="." method="zoom_full"]
+[connection signal="pressed" from="bottom_right/zoom_in" to="." method="zoom_in"]
+[connection signal="pressed" from="bottom_right/zoom_out" to="." method="zoom_out"]
+[connection signal="pressed" from="panning/pan_up" to="." method="pan_up"]
+[connection signal="pressed" from="panning/pan_down" to="." method="pan_down"]
+[connection signal="pressed" from="panning/pan_left" to="." method="pan_left"]
+[connection signal="pressed" from="panning/pan_right" to="." method="pan_right"]
