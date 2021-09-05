@@ -78,6 +78,12 @@ Includes [Exported Variable Assignment](#exported-variable-assignment), [Node Tr
 Part of [Method Design Properties](#method-design-properties).  
 Uses None.  
 
+### Automatic Feedback
+User can immediately see consequences of a change.  
+Includes None.  
+Part of [Feedback](#feedback).  
+Uses None.  
+
 ### Briefly
 Quickly describe something.  
 Includes None.  
@@ -86,7 +92,7 @@ Uses None.
 
 ### Code Complexity
 How difficult something is to implement.  
-Includes [Low Code Complexity](#low-code-complexity), [High Code Complexity](#high-code-complexity), [Medium Code Complexity](#medium-code-complexity), [no-code-complexity](#no-code-complexity).  
+Includes [High Code Complexity](#high-code-complexity), [Low Code Complexity](#low-code-complexity), [Medium Code Complexity](#medium-code-complexity), [No Code Complexity](#no-code-complexity).  
 Part of [Method Design Properties](#method-design-properties).  
 Uses None.  
 
@@ -94,6 +100,24 @@ Uses None.
 Happens as a result of other factors. Can be deliberate or incidental.  
 Includes None.  
 Part of [Method Design Properties](#method-design-properties).  
+Uses None.  
+
+### Difficult Error Recovery
+Changes that are hard to revert.  
+Includes None.  
+Part of [Error Recovery](#error-recovery).  
+Uses None.  
+
+### Easy Error Recovery
+Changes that require only some or no work to revert.  
+Includes None.  
+Part of [Error Recovery](#error-recovery).  
+Uses None.  
+
+### Exported Variable Assignment
+Using the inspector to refer to members of a tree. Medium intensity edits.  
+Includes None.  
+Part of [Assignment](#assignment).  
 Uses None.  
 
 ### Error Recovery
@@ -114,10 +138,52 @@ Includes [No Final Setup](#no-final-setup), [Script Final Setup](#script-final-s
 Part of [Method Design Properties](#method-design-properties).  
 Uses None.  
 
+### Heavy User Ceremony
+User must perform several repeated steps to achieve a change.  
+Includes None.  
+Part of [User Ceremony](#user-ceremony).  
+Uses None.  
+
+### High Code Complexity
+Something that is difficult to make.  
+Includes None.  
+Part of [Code Complexity](#code-complexity).  
+Uses None.  
+
+### Impossible Error Recovery
+Changes that cannot be reverted.  
+Includes None.  
+Part of [Error Recovery](#error-recovery).  
+Uses None.  
+
 ### Includes
 Subtypes to a Vocabulary Term.  
 Includes None.  
 Part of [Vocabulary Properties](#vocabulary-properties).  
+Uses None.  
+
+### Inherent Feedback
+User can immediately see consequences of a change inherently from pre-existing conditions.  
+Includes None.  
+Part of [Feedback](#feedback).  
+Uses None.  
+
+### Low Code Complexity
+Something that is relatively easy to make.  
+Includes None.  
+Part of [Code Complexity](#code-complexity).  
+Uses None.  
+
+### Low User Ceremony
+User must perform few repeated steps to achieve a change.  
+Includes None.  
+Part of [User Ceremony](#user-ceremony).  
+Uses None.  
+
+### Medium Code Complexity
+Something that requires some difficulty to make.  
+Includes None.  
+Part of [Code Complexity](#code-complexity).  
 Uses None.  
 
 ### Method Design Properties
@@ -132,10 +198,52 @@ Includes [Method 1](#method-1), [Method 2](#method-2), [Method 3](#method-3), [M
 Part of None.  
 Uses [Method Design Properties](#method-design-properties).  
 
+### No Code Complexity
+Something that requires no effort to make.  
+Includes None.  
+Part of [Code Complexity](#code-complexity).  
+Uses None.  
+
+### No Feedback
+There is no indication of the consequences of a change.  
+Includes None.  
+Part of [Feedback](#feedback).  
+Uses None.  
+
+### No Final Setup
+No further steps are needed for the structure.  
+Includes None.  
+Part of [Final Setup](#final-setup).  
+Uses None.  
+
+### No User Ceremony
+User must not perform any repeated steps to achieve a change.  
+Includes None.  
+Part of [User Ceremony](#user-ceremony).  
+Uses None.  
+
+### Node Tree Assignment
+Building a tree through regular assembly of a scene tree. Low intensity edits.  
+Includes None.  
+Part of [Assignment](#assignment).  
+Uses None.  
+
 ### Part Of
 One things is used by another to describe it.  
 Includes None.  
 Part of [Vocabulary Properties](#vocabulary-properties).  
+Uses None.  
+
+### Scene Expansion Assignment
+Extensively modifying the scene tree instead of building a tree. High intensity edits.  
+Includes None.  
+Part of [Assignment](#assignment).  
+Uses None.  
+
+### Script Final Setup
+Further steps are needed for the structure, done through code.  
+Includes None.  
+Part of [Final Setup](#final-setup).  
 Uses None.  
 
 ### User Ceremony
@@ -165,14 +273,20 @@ Uses None.
 
 ## Roadmap
 
-### [ ] Basic GitHub Setup
+### [x] Basic GitHub Setup
 - Project
 - Readme
+
+### [x] Advanced GitHub Setup
+- Very Detailed Readme
 
 ### [ ] Basic Godot Setup
 - Project Files
 - Exports
 - Folders
+
+### [ ] Advanced Godot Setup
+- Copy Files from InStructEd
 
 ### [ ] Method 1 
 - Briefly build up scenes manually using *Instance Child Scene*, *Expand Child Nodes*, *...*
