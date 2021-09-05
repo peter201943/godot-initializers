@@ -280,7 +280,7 @@ Uses None.
 ### [x] Advanced GitHub Setup
 - Very Detailed Readme
 
-### [ ] Basic Godot Setup
+### [x] Basic Godot Setup
 - Project Files
 - Exports
 - Folders
@@ -355,7 +355,6 @@ Peter James Mangelsdorf
 [![Outlook](https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=flat&logo=microsoft-outlook&logoColor=white&label=peter.j.mangelsdorf)](mailto:peter.j.mangelsdorf@outlook.com)  
 [![Discord](https://img.shields.io/badge/%3CServer%3E-%237289DA.svg?style=flat&logo=discord&logoColor=white&label=peter201943%238017)](https://discord.com/)  
 [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=flat&logo=github&logoColor=white&label=peter201943)](https://github.com/peter201943/)  
-[![Itch.io](https://img.shields.io/badge/Itch-%23FF0B34.svg?style=flat&logo=Itch.io&logoColor=white&label=peter201943)](https://peter201943.itch.io/)  
 
 ### Project
 Godot Initializers  
